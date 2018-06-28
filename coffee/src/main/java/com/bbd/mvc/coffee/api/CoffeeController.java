@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CoffeeController {
 
-    private final CoffeeService metricsService;
+    private final CoffeeService coffeeService;
 
-    public CoffeeController(CoffeeService metricsService) {
-        this.metricsService = metricsService;
+    public CoffeeController(CoffeeService coffeeService) {
+        this.coffeeService = coffeeService;
     }
 
     @RequestMapping("/coffee")
-    public CoffeeResponse metrics() {
-        return new CoffeeResponse(metricsService.getCoffee());
+    public CoffeeResponse coffee() {
+        return new CoffeeResponse(coffeeService.getCoffee());
     }
 }
