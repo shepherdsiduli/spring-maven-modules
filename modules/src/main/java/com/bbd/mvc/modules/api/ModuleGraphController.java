@@ -26,12 +26,6 @@ public class ModuleGraphController {
 
     private void fillNodeAndEdges(HashSet<Node> nodes, HashSet<Edge> edges) {
 
-        try {
-            Java9Scanner.scan();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
         Set<Module> modules = ModuleLayer.boot().modules();
         for (Module module : modules) {
             String moduleName = module.getName();

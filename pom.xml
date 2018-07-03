@@ -19,7 +19,7 @@
         <java.version>10</java.version>
         <spring-boot.version>1.5.13.RELEASE</spring-boot.version>
         <spring.version>4.3.17.RELEASE</spring.version>
-        <start-class>Java9SpringMvcExample</start-class>
+        <start-class>com.bbd.mvc.Java9SpringMvcExample</start-class>
     </properties>
 
     <dependencyManagement>
