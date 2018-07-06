@@ -8,7 +8,7 @@ RUN /docker-java-home/bin/jlink \
     --no-header-files \
     --output /opt/jdk-10-minimal
 
-FROM debian:sid-slim
+FROM ubuntu:latest
 COPY --from=packager /opt/jdk-10-minimal /opt/jdk-10-minimal
 
 ENV JAVA_HOME=/opt/jdk-10-minimal
