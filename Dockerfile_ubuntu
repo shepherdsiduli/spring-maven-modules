@@ -6,6 +6,8 @@ RUN /docker-java-home/bin/jlink \
     --add-modules java.sql,java.naming,java.management,java.instrument,java.security.jgss,java.xml.bind \
     --compress 2 \
     --no-header-files \
+    --strip-debug \
+	--no-man-pages \
     --output /opt/jdk-10-minimal
 
 FROM ubuntu:latest
