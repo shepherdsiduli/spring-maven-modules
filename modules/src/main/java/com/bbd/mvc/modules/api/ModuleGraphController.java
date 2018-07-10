@@ -26,6 +26,7 @@ public class ModuleGraphController {
 
     private void fillNodeAndEdges(HashSet<Node> nodes, HashSet<Edge> edges) {
 
+        //GET the layer of modules in the Java virtual machine.
         Set<Module> modules = ModuleLayer.boot().modules();
         for (Module module : modules) {
             String moduleName = module.getName();

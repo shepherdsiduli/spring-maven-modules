@@ -5,5 +5,8 @@ java -jar app/target/app-1.0-SNAPSHOT
 
 mvn clean install
 
-docker build -t roryp/coffee .
-winpty docker run -it -p 8080:8080 roryp/coffee
+docker build -t rorypreddy/coffee .
+winpty docker run -it -p 8080:8080 rorypreddy/coffee
+
+jdeps .
+
