@@ -7,6 +7,7 @@ module com.bbd.mvc {
     requires coffee;
 
     exports com.bbd.mvc;
+    opens com.bbd.mvc;
 }
 
 //The equivalent Classpath is:
